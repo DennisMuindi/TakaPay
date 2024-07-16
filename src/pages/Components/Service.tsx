@@ -27,25 +27,28 @@ export default function AboutUs() {
 
   return (
     <div
-      className="h-screen flex flex-col items-center justify-center w-full gap-8 bg-gray-100 mt-20"
+      className="h-screen flex flex-col items-center justify-center w-full "
       ref={ref}
-      id="about"
+      id="service"
     >
       <h2 className="text-4xl font-semibold text-gray-800 relative overflow-hidden group">
-        About Us
+        Services
         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-transparent origin-center transform scale-x-0 group-hover:bg-green-600 transition-all duration-300 ease-in-out"></span>
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-8 mt-8 w-full lg:flex-row">
+      <div
+        className="flex flex-wrap justify-center gap-8 mt-8 w-full lg:flex-row py-20"
+        style={{ backgroundImage: "url('/garbage.jpg')" }}
+      >
         <div
-          className="max-w-sm w-full  shadow-lg rounded-xl overflow-hidden transform transition-transform hover:scale-105 animate-slide-up "
+          className="max-w-sm w-full  shadow-lg rounded-xl bg-gray-300 overflow-hidden transform transition-transform hover:scale-105 animate-slide-up"
           ref={visionRef}
         >
           <div className="p-6 ">
             <h3 className="text-2xl font-semibold text-green-600 mb-4">
               Our Vision
             </h3>
-            <p className="text-gray-700 text-justify">
+            <p className="text-gray-900 text-justify">
               Our vision is to create a sustainable and efficient waste
               management system that benefits both the community and the
               environment through innovative technology and dedicated service.

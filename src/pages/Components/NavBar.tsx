@@ -1,16 +1,30 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function NavBar() {
   const [isClick, setIsClick] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   const toggleNavbar = () => {
     setIsClick(!isClick);
   };
 
+  const handleScroll = () => {
+    setHasScrolled(window.scrollY > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
-      <nav className="bg-gray-900 fixed w-full z-50">
+      <nav
+        className={`fixed w-full z-50 transition-colors duration-300 ${
+          hasScrolled ? "bg-gray-900" : "bg-transparent"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex h-20 items-center justify-between">
             <div className="flex items-center">
@@ -18,38 +32,38 @@ export default function NavBar() {
                 <img
                   src="/logo.jpeg"
                   alt="Logo"
-                  className="h-14 w-14 rounded-full"
+                  className="h-14 w-14 rounded-full bg-black"
                 />
               </div>
             </div>
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4">
                 <a
-                  href="/"
+                  href="#home"
                   className="text-white hover:bg-green-600 rounded-lg px-4 py-1 font-medium"
                 >
                   Home
                 </a>
                 <a
-                  href="/"
+                  href="#about"
                   className="text-white hover:bg-green-600 rounded-lg px-4 py-1 font-medium"
                 >
                   About
                 </a>
                 <a
-                  href="/"
+                  href="#service"
                   className="text-white hover:bg-green-600 rounded-lg px-4 py-1 font-medium"
                 >
                   Services
                 </a>
                 <a
-                  href="/"
+                  href="#pricing"
                   className="text-white hover:bg-green-600 rounded-lg px-4 py-1 font-medium"
                 >
                   Pricing
                 </a>
                 <a
-                  href="/"
+                  href="#contact"
                   className="text-white hover:bg-green-600 rounded-lg px-4 py-1 font-medium"
                 >
                   Contact
@@ -100,31 +114,31 @@ export default function NavBar() {
           <div className="md:hidden absolute bg-gray-900 w-1/2">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
-                href="/"
+                href="#home"
                 className="text-white block hover:bg-green-600 rounded-lg px-4 py-2 font-medium"
               >
                 Home
               </a>
               <a
-                href="/"
+                href="#about"
                 className="text-white block hover:bg-green-600 rounded-lg px-4 py-2 font-medium"
               >
                 About
               </a>
               <a
-                href="/"
+                href="#service"
                 className="text-white block hover:bg-green-600 rounded-lg px-4 py-2 font-medium"
               >
                 Services
               </a>
               <a
-                href="/"
+                href="#pricing"
                 className="text-white block hover:bg-green-600 rounded-lg px-4 py-2 font-medium"
               >
                 Pricing
               </a>
               <a
-                href="/"
+                href="#contact"
                 className="text-white block hover:bg-green-600 rounded-lg px-4 py-2 font-medium"
               >
                 Contact
