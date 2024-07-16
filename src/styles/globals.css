@@ -6,3 +6,23 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.gradient-text {
+  background: linear-gradient(to right, #52b162, #14d431);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-in-out;
+}
