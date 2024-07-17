@@ -27,11 +27,11 @@ export default function AboutUs() {
 
   return (
     <div
-      className="h-screen flex flex-col items-center justify-center w-full gap-8 bg-gray-100 mt-20"
+      className="h-screen flex flex-col items-center justify-center w-full gap-8 bg-gray-100 mt-20 about"
       ref={ref}
       id="about"
     >
-      <h2 className="text-4xl font-semibold text-gray-800 relative overflow-hidden group">
+      <h2 className="text-4xl font-semibold text-gray-800 relative overflow-hidden group ">
         About Us
         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-transparent origin-center transform scale-x-0 group-hover:bg-green-600 transition-all duration-300 ease-in-out"></span>
       </h2>

@@ -48,3 +48,17 @@ body {
   background: transparent;
   border: 1px solid white;
 }
+
+@media screen and (max-width: 767px) {
+  #scroll-div {
+    width: inherit;
+    background: black;
+    flex: none;
+  }
+  #about {
+    margin-top: 17rem;
+  }
+  #navbar {
+    height: 100vh;
+  }
+}

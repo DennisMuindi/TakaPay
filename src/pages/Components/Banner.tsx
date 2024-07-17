@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Banner() {
-  const texts = ["Takapay", "A Digital System", "A Trade System"];
+  const texts = ["TAKAPAY", "A Digital System", "A Trade System"];
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -50,14 +50,14 @@ export default function Banner() {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
       </div>
-      <div className="relative z-10 w-3/4 flex flex-col items-start justify-center p-6 text-left">
-        <h1 className="text-white text-5xl font-semibold">
+      <div className="relative z-10 w-full sm:w-3/4 flex flex-col items-start justify-center p-6 text-left">
+        <h1 className="text-white text-5xl font-semibold w-full sm:w-auto">
           Welcome to{" "}
           <span className="font-bold text-green-500 span gradient-text">
             {currentText}
           </span>
         </h1>
-        <p className="text-white w-[80%] text-lg text-justify leading-relaxed pt-4">
+        <p className="text-white w-full sm:w-[80%] text-lg text-justify leading-relaxed pt-4">
           <span className="span font-bold text-green-600 text-xl">Takapay</span>{" "}
           is a digital and trade management system that uses Google Plus Codes
           and Geographic Information Systems (GIS) to control waste collection
@@ -99,12 +99,12 @@ export default function Banner() {
           </a>
         </div>
         <button className="button-hover rounded-lg text-white px-6 py-2 bg-green-600 font-semibold mt-4 text-center w-[40%]">
-          <a href="#" className="text-center">
+          <a href="#contact" className="text-center">
             Contact Us
           </a>
         </button>
       </div>
-      <div className="relative z-10 w-1/2 flex items-center justify-center">
+      <div className="relative z-10 w-1/2 flex items-center justify-center hidden sm:flex">
         <img
           src="/dummy.webp"
           alt="Banner Image"

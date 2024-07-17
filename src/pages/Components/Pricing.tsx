@@ -3,78 +3,49 @@ import React from "react";
 export default function Pricing() {
   const pricingPlans = [
     {
-      title: "Households",
-      price: "",
-      features: ["Weekly Garbage Collection"],
+      title: "Single Room",
+      price: "KES 120",
+      features: ["Garbage Collection"],
     },
     {
-      title: "Standard",
-      price: "$29",
+      title: "Bedsitter",
+      price: "KES 200",
       features: ["Bi-Weekly Garbage Collection", "Monthly Toilet Cleaning"],
     },
     {
-      title: "Pro",
-      price: "$49",
-      features: ["Weekly Garbage Collection", "Bi-Weekly Toilet Cleaning"],
+      title: "One Bedroom +",
+      price: "KES 300",
+      features: ["Bi-Weekly Garbage Collection", "Monthly Toilet Cleaning"],
     },
     {
-      title: "Premium",
-      price: "$69",
-      features: ["Daily Garbage Collection", "Weekly Toilet Cleaning"],
+      title: "Primary School",
+      price: "KES 900",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "Enterprise",
-      price: "$99",
-      features: [
-        "Daily Garbage Collection",
-        "Weekly Toilet Cleaning",
-        "24/7 Support",
-      ],
+      title: "Nursery Schools",
+      price: "KES 300",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "Gold",
-      price: "$129",
-      features: [
-        "Daily Garbage Collection",
-        "Daily Toilet Cleaning",
-        "24/7 Support",
-      ],
+      title: "Hotels",
+      price: "KES 2500",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "Platinum",
-      price: "$159",
-      features: [
-        "Daily Garbage Collection",
-        "Daily Toilet Cleaning",
-        "24/7 Priority Support",
-      ],
+      title: "Clubs",
+      price: "KES 1500",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "Diamond",
-      price: "$199",
-      features: [
-        "Daily Garbage Collection",
-        "Daily Toilet Cleaning",
-        "Dedicated Support",
-      ],
+      title: "Restaurants",
+      price: "KES 1200",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "VIP",
-      price: "$249",
-      features: [
-        "Daily Garbage Collection",
-        "Daily Toilet Cleaning",
-        "Personal Account Manager",
-      ],
-    },
-    {
-      title: "Ultimate",
-      price: "$299",
-      features: [
-        "Daily Garbage Collection",
-        "Daily Toilet Cleaning",
-        "Exclusive Benefits",
-      ],
+      title: "Churches",
+      price: "KES 1000",
+      features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
   ];
 
@@ -89,11 +60,12 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="mt-12 overflow-x-auto">
+        <div className="mt-12 overflow-x-hidden relative">
           <div className="whitespace-nowrap flex animate-scroll">
             {pricingPlans.map((plan, index) => (
               <div
                 key={index}
+                id="scroll-div"
                 className="inline-block w-1/3 mx-4 rounded-lg shadow-lg overflow-hidden bg-white"
                 style={{ minWidth: "30%" }}
               >
@@ -145,7 +117,7 @@ export default function Pricing() {
 
       <style jsx>{`
         .animate-scroll {
-          animation: scroll 20s linear infinite;
+          animation: scroll 40s linear infinite;
         }
 
         @keyframes scroll {

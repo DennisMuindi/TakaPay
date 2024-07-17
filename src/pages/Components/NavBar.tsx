@@ -111,7 +111,7 @@ export default function NavBar() {
           </div>
         </div>
         {isClick && (
-          <div className="md:hidden absolute bg-gray-900 w-1/2">
+          <div className="md:hidden absolute bg-gray-900 w-1/2 " id="navbar">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 href="#home"

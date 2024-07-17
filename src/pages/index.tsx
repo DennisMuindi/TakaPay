@@ -14,7 +14,7 @@ export default function Home() {
       <div className="relative bg-cover bg-center h-[70%]">
         <div className="bg-black bg-opacity-50 w-full h-full absolute inset-0"></div>
         <NavBar />
-        <Banner />
+        <Banner />H
       </div>
       <AboutUs />
       <Service />
