@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export default function NavBar() {
   const [isClick, setIsClick] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleNavbar = () => {
     setIsClick(!isClick);
@@ -13,9 +14,20 @@ export default function NavBar() {
     setHasScrolled(window.scrollY > 0);
   };
 
+  const handleClickOutside = (event: MouseEvent) => {
+    if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+      setIsClick(false);
+    }
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
   return (
@@ -111,7 +123,11 @@ export default function NavBar() {
           </div>
         </div>
         {isClick && (
-          <div className="md:hidden absolute bg-gray-900 w-1/2 " id="navbar">
+          <div
+            ref={menuRef}
+            className="md:hidden absolute bg-gray-900 right-0 w-1/2"
+            id="navbar"
+          >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a
                 href="#home"
