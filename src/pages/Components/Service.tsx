@@ -44,7 +44,7 @@ export default function Service() {
       id="service"
     >
       <h2 className="text-4xl font-semibold pt-5 text-white relative overflow-hidden group">
-        Services
+        Our Services
         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-transparent origin-center transform scale-x-0 group-hover:bg-green-600 transition-all duration-300 ease-in-out"></span>
       </h2>
 
