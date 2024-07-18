@@ -48,7 +48,7 @@ export default function Service() {
         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-transparent origin-center transform scale-x-0 group-hover:bg-green-600 transition-all duration-300 ease-in-out"></span>
       </h2>
 
-      <div className="flex flex-col items-center justify-center gap-8 mt-8 w-full px-2 py-20 sm:flex-row sm:flex-wrap sm:gap-4 bg">
+      <div className="flex flex-col items-center justify-center gap-8 mt-8 w-full px-2 py-20 lg:flex-row lg:flex-nowrap lg:gap-4">
         {/* Service Card 1: Garbage Collection */}
         <div
           className="max-w-sm w-full bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform hover:scale-105 animate-slide-up"
