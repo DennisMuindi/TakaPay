@@ -47,25 +47,36 @@ export default function Contact() {
                 />
                 <span className="text-gray-300">(254) 1053 48811</span>
               </div>
-              <div className="mt-2 flex items-center justify-center md:justify-start space-x-4 text-gray-300">
+              <div className="my-3 flex items-center justify-center md:justify-start space-x-4 text-gray-300">
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   className="w-6 h-6 text-green-400"
                 />
-                <span className="text-gray-300">info.takapay@gmail.com</span>
+                <span className="text-gray-300">info@taka-pay.com</span>
+              </div>
+              <div className="my-3 flex items-center justify-center md:justify-start space-x-4 text-gray-300 ">
+                <FontAwesomeIcon
+                  icon={faMapMarkerAlt}
+                  className="w-6 h-6 text-green-400"
+                />
+
+                <span className="text-gray-300">
+                  Hillcrest Court, Westlands-Nairobi, P.O BOX 29460-0100
+                </span>
               </div>
               <div className="mt-2 flex items-center justify-center md:justify-start space-x-4 text-gray-300">
                 <FontAwesomeIcon
                   icon={faMapMarkerAlt}
                   className="w-6 h-6 text-green-400"
                 />
+
                 <span className="text-gray-300">
                   Traders Housing Plaza, Room TH018R, Machakos,
                 </span>
               </div>
               <div className="mt-8 flex items-center justify-center md:justify-start space-x-6">
                 <a
-                  href="https://www.facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61562893823364"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -75,7 +86,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/this_is_takapaymks?igsh=MThoZGo3YzRhbW13dg=="
                   target="_blank"
                   rel="noopener noreferrer"
                 >
