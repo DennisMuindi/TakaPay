@@ -64,4 +64,7 @@ body {
   #btn-contact {
     width: 100%;
   }
+  #dummy {
+    display: none;
+  }
 }

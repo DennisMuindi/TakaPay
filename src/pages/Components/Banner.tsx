@@ -10,7 +10,7 @@ export default function Banner() {
   const texts = [
     "Taka Pay",
     "An Automated Waste Management System",
-    " An Automated Trader management System",
+    "An Automated Trader management System",
   ];
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -113,7 +113,10 @@ export default function Banner() {
           </a>
         </button>
       </div>
-      <div className="relative z-10 w-1/2 flex items-center justify-center hidden sm:flex">
+      <div
+        className="relative z-10 w-1/2 flex items-center justify-center sm:flex"
+        id="dummy"
+      >
         <img
           src="/dummy.webp"
           alt="Banner Image"
