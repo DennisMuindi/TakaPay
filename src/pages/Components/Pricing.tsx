@@ -28,7 +28,7 @@ export default function Pricing() {
       features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
     {
-      title: "Hotels",
+      title: "Corporate",
       price: "KES 2500",
       features: ["Bi-Weekly Garbage Collection", "Toilet Cleaning"],
     },
