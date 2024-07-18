@@ -22,7 +22,7 @@ export default function Contact() {
         <div className="text-center text-white">
           <h2 className="text-3xl font-extrabold">Contact Us</h2>
           <p className="mt-4 text-lg">
-            We'd love to hear from you! Reach out to us via phone, email, or
+            We would love to hear from you! Reach out to us via phone, email, or
             follow us on social media.
           </p>
         </div>

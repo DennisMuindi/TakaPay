@@ -55,7 +55,7 @@ export default function Pricing() {
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-gray-900">Pricing</h2>
           <p className="mt-4 text-lg text-gray-600">
-            Choose the plan that best suits your institution's waste management
+            Choose the plan that best suits your institutions waste management
             needs.
           </p>
         </div>
