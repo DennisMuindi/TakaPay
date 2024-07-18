@@ -8,7 +8,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .gradient-text {
-  background: linear-gradient(to right, #52b162, #14d431);
+  background: linear-gradient(to right, #0ecd2e, #399046);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -60,5 +60,8 @@ body {
   }
   #navbar {
     height: 100vh;
+  }
+  #btn-contact {
+    width: 100%;
   }
 }
