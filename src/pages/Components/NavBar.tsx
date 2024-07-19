@@ -42,9 +42,9 @@ export default function NavBar() {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <img
-                  src="/logo.jpeg"
+                  src="/takapay.svg"
                   alt="Logo"
-                  className="h-14 w-14 rounded-full bg-black"
+                  className="h-20 w-20 rounded-full bg-tranparent"
                 />
               </div>
             </div>
